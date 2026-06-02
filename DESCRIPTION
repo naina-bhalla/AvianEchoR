@@ -1,0 +1,37 @@
+Package: AvianEchoR
+Type: Package
+Title: Statistical Acoustic Analysis and Classification of Bird Calls
+Version: 1.0.0
+Author: Naina Bhalla [aut, cre]
+Maintainer: Naina Bhalla <nainab24@iitk.ac.in>
+Description: A comprehensive statistical pipeline for ornithological acoustic analysis.
+  This package processes raw bioacoustic recordings into a 15-dimensional hybrid 
+  feature space using Functional Principal Component Analysis (fPCA) on pitch 
+  trajectories and discrete spectral properties. It provides robust dimensionality 
+  reduction (PCA, t-SNE, UMAP) and employs a Distance-Weighted k-Nearest Neighbors 
+  (kNN) algorithm with stratified cross-validation for species classification. 
+  Features an interactive Shiny dashboard for live inference and visualization.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5.0)
+Imports:
+    class,
+    fda,
+    Rtsne,
+    seewave,
+    shiny,
+    stats,
+    tuneR,
+    uwot,
+    dplyr,
+    bslib,
+    plotly,
+    ggplot2,
+    bsicons
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
